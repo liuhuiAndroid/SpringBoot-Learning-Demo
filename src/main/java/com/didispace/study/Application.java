@@ -1,13 +1,13 @@
-package com.didispace.chapter1;
+package com.didispace.study;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Chapter1Application {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Chapter1Application.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 

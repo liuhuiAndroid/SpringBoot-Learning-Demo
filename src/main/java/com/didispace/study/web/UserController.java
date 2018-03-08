@@ -1,4 +1,6 @@
-package com.didispace.chapter1;
+package com.didispace.study.web;
+
+import com.didispace.study.domain.User;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;

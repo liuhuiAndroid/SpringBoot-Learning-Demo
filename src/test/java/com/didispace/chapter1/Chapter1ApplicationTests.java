@@ -1,5 +1,8 @@
 package com.didispace.chapter1;
 
+import com.didispace.study.BlogProperties;
+import com.didispace.study.Application;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
@@ -13,10 +16,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
 //@SpringBootTest(classes = MockServletContext.class)
-@SpringApplicationConfiguration(Chapter1Application.class)
+@SpringApplicationConfiguration(Application.class)
 public class Chapter1ApplicationTests {
 
-	private static final Log l = LogFactory.getLog(Chapter1Application.class);
+	private static final Log l = LogFactory.getLog(Application.class);
 
 //	private MockMvc mvc;
 //

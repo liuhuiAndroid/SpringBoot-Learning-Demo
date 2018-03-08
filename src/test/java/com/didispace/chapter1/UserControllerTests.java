@@ -1,5 +1,8 @@
 package com.didispace.chapter1;
 
+import com.didispace.study.Application;
+import com.didispace.study.web.UserController;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
@@ -33,7 +36,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class UserControllerTests {
 
     private MockMvc mvc;
-    private static final Log l = LogFactory.getLog(Chapter1Application.class);
+    private static final Log l = LogFactory.getLog(Application.class);
 
     @Before
     public void setUp() throws Exception {
