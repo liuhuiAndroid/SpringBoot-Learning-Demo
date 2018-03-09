@@ -1,6 +1,5 @@
-package com.didispace.chapter1;
+package com.didispace.study;
 
-import com.didispace.study.Application;
 import com.didispace.study.domain.p.User;
 import com.didispace.study.domain.p.UserRepository;
 import com.didispace.study.domain.s.Message;

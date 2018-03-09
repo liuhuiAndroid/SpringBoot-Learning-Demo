@@ -9,21 +9,21 @@ import javax.persistence.Id;
  * Created by lh on 2018/3/8.
  */
 @Entity
-public class User {
+public class Man {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 5)
     private String name;
 
     @Column(nullable = false)
     private Integer age;
 
-    protected User() {}
+    protected Man() {}
 
-    public User(String name, Integer age) {
+    public Man(String name, Integer age) {
         this.name = name;
         this.age = age;
     }

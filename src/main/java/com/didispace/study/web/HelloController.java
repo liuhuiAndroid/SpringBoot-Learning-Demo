@@ -5,6 +5,8 @@ import com.didispace.study.error.MyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * Created by lh on 2018/3/7.
@@ -12,8 +14,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/hello")
-    public @ResponseBody String index() throws Exception {
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public @ResponseBody String hello(@RequestParam String name) throws Exception {
+        return "Hello " + name;
+    }
+
+
+    @RequestMapping("/error/test")
+    public @ResponseBody String error() throws Exception {
         throw new Exception("发生错误");
     }
 

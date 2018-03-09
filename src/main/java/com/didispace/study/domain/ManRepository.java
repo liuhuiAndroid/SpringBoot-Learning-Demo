@@ -7,13 +7,13 @@ import org.springframework.data.repository.query.Param;
 /**
  * Created by lh on 2018/3/8.
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface ManRepository extends JpaRepository<Man, Long> {
 
-    User findByName(String name);
+    Man findByName(String name);
 
-    User findByNameAndAge(String name, Integer age);
+    Man findByNameAndAge(String name, Integer age);
 
-    @Query("from User u where u.name=:name")
-    User findUser(@Param("name") String name);
+    @Query("from Man u where u.name=:name")
+    Man findUser(@Param("name") String name);
 
 }

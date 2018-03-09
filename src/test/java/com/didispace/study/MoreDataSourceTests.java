@@ -1,6 +1,4 @@
-package com.didispace.chapter1;
-
-import com.didispace.study.Application;
+package com.didispace.study;
 
 import org.junit.Assert;
 import org.junit.Before;

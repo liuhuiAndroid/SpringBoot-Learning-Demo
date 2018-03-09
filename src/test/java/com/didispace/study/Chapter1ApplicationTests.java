@@ -1,7 +1,4 @@
-package com.didispace.chapter1;
-
-import com.didispace.study.BlogProperties;
-import com.didispace.study.Application;
+package com.didispace.study;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
